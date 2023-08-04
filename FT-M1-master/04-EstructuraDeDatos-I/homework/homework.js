@@ -42,11 +42,9 @@ class Queue {
   }
 
   dequeue() {
-    if (this.queue.length === 0) {
-      return undefined;
-    } else {
-      return this.queue.shift();
-    }
+    if (this.queue.length === 0) return undefined;
+    
+    return this.queue.shift();
   }
 
   size() {
